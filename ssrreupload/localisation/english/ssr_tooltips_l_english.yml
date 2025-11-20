@@ -126,3 +126,4 @@
  SOV_malta_territorial_decision:0 "Malta territorial decision completed"
 
  ssrplus.uniting.1:0 "Has completed all territorial decisions for the Arabian Penensuila \n\n§RYOU WILL NOT BE ABLE TO UNITE THE LEVANT ADMINISTRATION AND THE REST OF ARABIA§!"
+ ssrplus.uniting.2:0 "This only works if you have created Spain and Portugal."

@@ -19,7 +19,7 @@ SOV_ssrplus_categories_europe = {
 				98 = { is_controlled_by_ROOT_or_subject = yes }
 				97 = { is_controlled_by_ROOT_or_subject = yes }
 				92 = { is_controlled_by_ROOT_or_subject = yes }
-				88 = { is_controlled_by_ROOT_or_subject = yes }
+
 				762 = { is_controlled_by_ROOT_or_subject = yes }
 				86 = { is_controlled_by_ROOT_or_subject = yes }
 				807 = { is_controlled_by_ROOT_or_subject = yes }
@@ -290,6 +290,43 @@ SOV_ssrplus_categories_europe = {
 		}
 	}
 	
+		SOV_ssrplus_austrian_administration = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			country_exists = SAS
+			
+			SAS = {
+				is_puppet_of = SOV
+			}
+
+		}
+
+		cost = 100
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 30
+
+		visible = {
+			has_government = communism
+			country_exists = SAS
+		}
+		
+		fire_only_once = yes
+
+		remove_effect = {
+			SAS = {
+			set_cosmetic_tag = SAS_Austrian
+			}
+		}
+	}
+
 	SOV_ssrplus_unitegermany = {
 
 		icon = GFX_decision_category_generic_communism
@@ -1901,8 +1938,7 @@ SOV_ssrplus_categories_europe = {
 			    tooltip = ssrplus.territorialtooltip.1
 			    63 = { is_controlled_by_ROOT_or_subject = yes }
 				68 = { is_controlled_by_ROOT_or_subject = yes }
-				66 = { is_controlled_by_ROOT_or_subject = yes }
-				67 = { is_controlled_by_ROOT_or_subject = yes }
+
 
 			}
 			
@@ -2493,7 +2529,48 @@ SOV_ssrplus_categories_europe = {
 								
 		
 		}		
-									
+
+			SOV_ssrplus_territorial_silesia = {
+
+		icon = GFX_decision_border_war
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.territorialtooltip.8
+			    66 = { is_controlled_by_ROOT_or_subject = yes }
+				67 = { is_controlled_by_ROOT_or_subject = yes }
+
+			}
+			
+			OR = {
+				country_exists = SOV
+				country_exists = SPL
+			}
+
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_government = communism
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			country_event = ssrplus.7
+		}
+		timeout_effect = {
+			country_event = ssrplus.7
+		}
+	}						
 }	
 
 
@@ -2969,6 +3046,9 @@ SOV_ssrplus_categories_asia = {
 				534 = { is_controlled_by_ROOT_or_subject = yes }
 				282 = { is_controlled_by_ROOT_or_subject = yes }
 				533 = { is_controlled_by_ROOT_or_subject = yes }
+				1019 = { is_controlled_by_ROOT_or_subject = yes }
+				1020 = { is_controlled_by_ROOT_or_subject = yes }
+				1018 = { is_controlled_by_ROOT_or_subject = yes }
 
 			}
 
@@ -3000,6 +3080,9 @@ SOV_ssrplus_categories_asia = {
 						state = 534
 						state = 282
 						state = 533
+						state = 1018
+						state = 1019
+						state = 1020
 				    }
 			    }
 
@@ -3071,6 +3154,7 @@ SOV_ssrplus_categories_asia = {
 			    tooltip = ssrplus.tooltip.34
 				671 = { is_controlled_by_ROOT_or_subject = yes }
 				286 = { is_controlled_by_ROOT_or_subject = yes }
+				1017 = { is_controlled_by_ROOT_or_subject = yes }
 
 			}
 
@@ -3100,6 +3184,7 @@ SOV_ssrplus_categories_asia = {
 					OR = {
 						state = 671
 						state = 286
+						state = 1017
 					}
 				}
 
@@ -3162,6 +3247,21 @@ SOV_ssrplus_categories_asia = {
 				614 = { is_controlled_by_ROOT_or_subject = yes }
 				615 = { is_controlled_by_ROOT_or_subject = yes }
 				608 = { is_controlled_by_ROOT_or_subject = yes }
+				1032 = { is_controlled_by_ROOT_or_subject = yes }
+				1033 = { is_controlled_by_ROOT_or_subject = yes }
+				1034 = { is_controlled_by_ROOT_or_subject = yes }
+				1035 = { is_controlled_by_ROOT_or_subject = yes }
+				1036 = { is_controlled_by_ROOT_or_subject = yes }
+				1037 = { is_controlled_by_ROOT_or_subject = yes }
+				1038 = { is_controlled_by_ROOT_or_subject = yes }
+				1039 = { is_controlled_by_ROOT_or_subject = yes }
+				1040 = { is_controlled_by_ROOT_or_subject = yes }
+				1041 = { is_controlled_by_ROOT_or_subject = yes }
+				1042 = { is_controlled_by_ROOT_or_subject = yes }
+				1043 = { is_controlled_by_ROOT_or_subject = yes }
+				1044 = { is_controlled_by_ROOT_or_subject = yes }
+				1045 = { is_controlled_by_ROOT_or_subject = yes }
+				1046 = { is_controlled_by_ROOT_or_subject = yes }
 			}
 
 		}
@@ -3221,6 +3321,21 @@ SOV_ssrplus_categories_asia = {
 						state = 614
 						state = 615
 						state = 608
+						state = 1032
+						state = 1033
+						state = 1034
+						state = 1035
+						state = 1036
+						state = 1037
+						state = 1038
+						state = 1039
+						state = 1040
+						state = 1041
+						state = 1042
+						state = 1043
+						state = 1044
+						state = 1045
+						state = 1046
 					}
 				}
 
@@ -3324,6 +3439,7 @@ SOV_ssrplus_categories_asia = {
 				760 = { is_controlled_by_ROOT_or_subject = yes }
 				618 = { is_controlled_by_ROOT_or_subject = yes }
 				617 = { is_controlled_by_ROOT_or_subject = yes }
+				1042 = { is_controlled_by_ROOT_or_subject = yes }
 			}
 
 		}
@@ -3356,6 +3472,7 @@ SOV_ssrplus_categories_asia = {
 						state = 760
 						state = 618
 						state = 617
+						state = 1042
 					}
 				}
 
@@ -3599,6 +3716,7 @@ SOV_ssrplus_categories_asia = {
 			custom_trigger_tooltip = { 
 			    tooltip = ssrplus.tooltip.42
 				527 = { is_controlled_by_ROOT_or_subject = yes }
+				1028 = { is_controlled_by_ROOT_or_subject = yes }
 			}
 
 		}
@@ -3626,6 +3744,7 @@ SOV_ssrplus_categories_asia = {
 				limit = {
 					OR = {
 						state = 527
+						state = 1028
 					}
 				}
 
@@ -3857,6 +3976,7 @@ SOV_ssrplus_categories_asia = {
 			    tooltip = ssrplus.territorialtooltip.20
 			    670 = { is_controlled_by_ROOT_or_subject = yes }
 				741 = { is_controlled_by_ROOT_or_subject = yes }
+				1017 = { is_controlled_by_ROOT_or_subject = yes }
 			}
 			country_exists = SVT
 		}
@@ -5069,6 +5189,9 @@ SOV_ssrplus_categories_territorial_ceding = {
 			custom_trigger_tooltip = {
 			    tooltip = ssrplus.territorialtooltip.35
 			    525 = { is_controlled_by_ROOT_or_subject = yes }
+				1029 = { is_controlled_by_ROOT_or_subject = yes }
+				1030 = { is_controlled_by_ROOT_or_subject = yes }
+				1031 = { is_controlled_by_ROOT_or_subject = yes }
 
 			}
 
@@ -5091,6 +5214,9 @@ SOV_ssrplus_categories_territorial_ceding = {
 			    limit = {
 				    OR = {
 					   	state = 525
+						state = 1029
+						state = 1030
+						state = 1031
 				    }
 			    }
 
@@ -5370,6 +5496,7 @@ SOV_ssrplus_categories_territorial_ceding = {
 			    tooltip = ssrplus.territorialtooltip.40
 			    526 = { is_controlled_by_ROOT_or_subject = yes }
 				645 = { is_controlled_by_ROOT_or_subject = yes }
+				533 = { is_controlled_by_ROOT_or_subject = yes }
 			}
 
 		}
@@ -5392,6 +5519,7 @@ SOV_ssrplus_categories_territorial_ceding = {
 				    OR = {
 					   	state = 526
 						state = 645
+						state = 533
 				    }
 			    }
 
@@ -8255,6 +8383,48 @@ SOV_ssrplus_categories_uniting_SSRs = {
 		}
 	}
 }
+
+SOV_ssrplus_unite_iberia = {
+
+		icon = GFX_decision_category_generic_communism
+
+		available = {
+			has_government = communism
+			is_subject = no
+			
+			country_exists = SSP
+			country_exists = SPT
+			
+			SSP = {
+				is_puppet_of = SOV
+			}
+		
+			custom_trigger_tooltip = { 
+			    tooltip = ssrplus.uniting.2
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			
+			SSP = {
+				annex_country = {
+					target = SPT
+					transfer_troops = yes
+				}
+			}
+				set_cosmetic_tag = SSP_Iberia
+			}
+			
+}
+	
+
 
 SOV_ssrplus_categories_shaping_our_future = { 
 

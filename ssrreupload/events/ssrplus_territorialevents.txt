@@ -2510,3 +2510,66 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = ssrplus.43
+	title = ssrplus.43.t
+	desc = ssrplus.43.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ssrplus.43.a
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		trigger = {
+			country_exists = SPL
+		}
+
+		SPL = {
+			transfer_state = 66
+			transfer_state = 67
+			
+			hidden_effect = {
+				add_state_core = 67
+				add_state_core = 67
+			}
+		}
+
+		SOV = {
+			set_country_flag = SOV_kurdistan_territorial_decision
+		}
+	}
+
+	option = {
+		name = ssrplus.43.b
+		
+		ai_chance = {
+			base = 5
+		}
+		
+		trigger = {
+			country_exists = SGD
+		}
+
+		SGD = {
+			transfer_state = 66
+			transfer_state = 67
+			
+			hidden_effect = {
+				add_state_core = 66
+				add_state_core = 67
+				add_state_core = 353
+				add_state_core = 800
+			}
+		}
+
+		SOV = {
+			set_country_flag = SOV_silesia_territorial_decision
+		}
+	}
+}

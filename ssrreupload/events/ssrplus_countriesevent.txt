@@ -592,6 +592,8 @@ country_event = {
 					state = 997
 					state = 998
 					state = 999
+					state = 640
+					state = 288
 				}
 			}
 
@@ -923,27 +925,79 @@ country_event = {
 }
 
 country_event = {
-    id = ssrpluscountry.8
-    title = ssrpluscountry.8.t
-    desc = ssrpluscountry.8.desc
-
-    trigger = {
-        tag = SOV
-        NOT = { tag_exists = GER }
-    }
-
-    immediate = {
-        set_leader_portrait = {
-            ideology = communism
-            portrait_path = "gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin_2.dds"
-        }
-    }
+	id = ssrpluscountry.8
+	title = ssrpluscountry.8.t
+	desc = ssrpluscountry.8.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+	
 
 	option = {
+		name = ssrpluscountry.1.a
+		
+		trigger = { }
+		
+		ai_chance = {
+			base = 10
+		}
+		
+		if = {
+			add_political_power = 25
+			add_stability = 0.01
 
+			set_autonomy = { target = SCZ autonomy_state = autonomy_puppet }
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					state = 10
+					state = 87
+					state = 98
+					state = 97
+					state = 92
+					state = 88
+					state = 762
+					state = 86
+					state = 807
+					state = 90
+					state = 85
+				}
+			}
+
+			SPL = {
+
+				transfer_state = PREV
+				
+				hidden_effect = {
+					add_state_core = PREV
+				}
+
+			}
+		}
 	}
-
-    is_triggered_only = yes
-	fire_only_once = yes
 }
+
+country_event = {
+id = ssrpluscountry.9
+	title = ssrpluscountry.9.t
+	desc = ssrpluscountry.9.d
+	picture = GFX_report_event_SOV_demands
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = ssrpluscountry.9.a
+
+		hidden_effect = {
+			set_portraits = {
+				character = SOV_iosif_stalin
+				civilian = { large ="GFX_Portrait_Soviet_Joseph_Stalin_2" }
+			}
+		}
+	}
+}
+
 

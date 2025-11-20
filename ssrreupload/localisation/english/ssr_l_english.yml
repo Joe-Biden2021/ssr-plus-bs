@@ -61,6 +61,11 @@
  SGD_german_democratic_DEF:0 "the Republic of Germany"
  SGD_german_neutrality:0 "German Empire"
  SGD_german_neutrality_DEF:0 "the German Empire"
+
+ SAS_Austrian:0 "Austrian People's Republic"
+ SAS_Austrian_DEF:0 "The Austrian People's Republic"
+ SAS_Austrian_adj:0 "Austrian"
+
  
  SFN_communism:0 "Finnish Democratic Republic"
  SFN_communism_DEF:0 "the Finnish Democratic Republic"
@@ -127,14 +132,14 @@
  SDN_communism:0 "Danish Socialist State"
  SDN_communism_DEF:0 "the Danish Socialist State"
  
- SAS_fascism:0 "Deutschsozialen Austria"
- SAS_fascism_DEF:0 "Deutschsozialen Austria"
- SAS_democratic:0 "Republic of Austria"
- SAS_democratic_DEF:0 "the Republic of Austria"
- SAS_neutrality:0 "Austria"
- SAS_neutrality_DEF:0 "Austria"
- SAS_communism:0 "Austrian People's Republic"
- SAS_communism_DEF:0 "the Austrian People's Republic"
+ SAS_fascism:0 "Zona Okkupacii Avstrii"
+ SAS_fascism_DEF:0 "Zona Okkupacii Avstrii"
+ SAS_democratic:0 "Zona Okkupacii Avstrii"
+ SAS_democratic_DEF:0 "Zona Okkupacii Avstrii"
+ SAS_neutrality:0 "Zona Okkupacii Avstrii"
+ SAS_neutrality_DEF:0 "Zona Okkupacii Avstrii"
+ SAS_communism:0 "Zona Okkupacii Avstrii"
+ SAS_communism_DEF:0 "Zona Okkupacii Avstrii"
 
  SBV_fascism:0 "Bavarian State"
  SBV_fascism_DEF:0 "the Bavarian State"
@@ -327,8 +332,8 @@
  STH_DEF:0 "Thai People's Republic"
  STH_ADJ:0 "Thai"
  
- SJA:0 "North Japan"
- SJA_DEF:0 "People's Republic of North Japan"
+ SJA:0 "Japanese People's Republic"
+ SJA_DEF:0 "the Japanese People's Republic"
  SJA_ADJ:0 "Japanese"
  SJA_united:0 "Japanese People's Republic"
  SJA_united_DEF:0 "the Japanese People's Republic"
@@ -351,12 +356,12 @@
  SOV_indochina_united:0 "Union of Indochinese Socialist Republics"
  SOV_indochina_united_DEF:0 "the Union of Indochinese Socialist Republics"
  
- SCH:0 "Buddhist Socialist Capitalist Indian Nazi-American Confederate State of Half Mexican Half Chinese People"
- SCH_DEF:0 "the Buddhist Socialist Capitalist Indian Nazi-American Confederate State of Half Mexican Half Chinese People"
+ SCH:0 "Chinese Civillian Military Administration"
+ SCH_DEF:0 "the Red Army Civillian Military Administration in China"
  SCH_mao:0 "People's Republic of China"
  SCH_mao_DEF:0 "the People's Republic of China"
- SCH_ming:0 "Chinese Soviet Socialist Republic"
- SCH_ming_DEF:0 "the Chinese Soviet Socialist Republic"
+ SCH_ming:0 "Socialist Republic of China"
+ SCH_ming_DEF:0 "the Socialist Republic of China"
  SCH_ADJ:0 "Chinese"
 
  SIM:0 "Inner Mongolian Peoples Republic"
@@ -489,6 +494,28 @@
  SNA_neutrality_DEF:0 "the North American Federation"
  SNA_ADJ:0 "North American"
 
+ SSP_Iberia:0 "Iberian Federation"
+ SSP_Iberia_DEF:0 "The Iberian Federation"
+ SSP_Iberia_ADJ:0 "Iberian"
+
+ SCZ_Czech:0 "Democratic People's Republic of Czechia"
+ SCZ_Czech_DEF:0 "the Democratic People's Republic of Czechia"
+ SCZ_Czech_adj:0 "Czech"
+
+ SOV_Tukhachevsky:0 "Union of Soviet Socialist Republics"
+ SOV_Tukhachevsky_DEF:0 "the Union of Soviet Socialist Republics"
+ SOV_Tukhachevsky_ADJ:0 "Soviet"
+
+ SSV_communism:0 "Slovak People's Republic"
+ SSV_communism_DEF:0 "the Slovak People's Republic"
+ SSV_adj:0 "Slovakian"
+
+
+
+ SOV:0 "Union of Soviet Socialist Republics"
+ SOV_DEF:0 "the Union of Soviet Socialist Republics"
+ SOV_ADJ:0 "Soviet"
+
  WARSAW_PACT: "Warsaw Pact"
- rename_comintern_to_warsaw_pact: "Rename Comintern to Warsaw Pact"
- rename_comintern_to_warsaw_pact_desc: "It is time to rebrand the Comintern into a true geopolitical alliance: The Warsaw Pact."
+ rename_comintern_to_warsaw_pact:0 "Found the Warsaw Pact"
+ rename_comintern_to_warsaw_pact_desc:0 "yo yo yo its commieing time"

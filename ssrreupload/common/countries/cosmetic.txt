@@ -277,8 +277,8 @@ USA_CSA = {
 }
 
 SOV_russia = {
-    color = rgb { 72 143 68 }
-    color_ui = rgb { 72 143 68 }
+    color = rgb { 54 97 56 }
+    color_ui = rgb { 54 97 56 }
 }
 
 HOL_benelux_unified = {
@@ -1634,3 +1634,32 @@ SMP_northiran = {
 	color_ui = rgb { 119 40 40 }
 }
 
+SSP_Iberia = {
+	color = rgb { 168 112 152 }
+	color_ui = rgb { 168 112 152 }
+}
+
+SGD_german = {
+	color = rgb { 128 19 3 }
+	color_ui = rgb { 128 19 3 }
+}
+
+SAS_Austrian = {
+	color = rgb ( 200 155 155 )
+	color_ui = rgb ( 200 155 155 )
+}
+
+SOV_Tukhachevsky = {
+	color = rgb ( 104 0 0 )
+	color_ui = rgb ( 104 0 0 )
+}
+
+SCH_mao = {
+	color = rgb (132 44 43)
+	color_ui = rgb ( 132 44 43 )
+}
+
+SCH_ming = {
+	color = rgb (132 44 43)
+	color_ui = rgb ( 132 44 43 )
+}

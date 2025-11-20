@@ -51,11 +51,11 @@
  SGD_neutrality_party:0 "ROF"
  SGD_neutrality_party_long:0 "Russian Occupation Forces"
  
- SGD_german_fascism_party:0 "NSDAP"
- SGD_german_fascism_party_long:0 "Nationalsozialistische Deutsche Arbeiterpartei"
+ SGD_german_fascism_party:0 "§ROUTLAWED§"
+ SGD_german_fascism_party_long:0 "§ROUTLAWED§"
  SGD_german_communism_party:0 "SED"
  SGD_german_communism_party_long:0 "Sozialistische Einheitspartei Deutschlands"
- SGD_german_democratic_party:0 "Zentrum"
+ SGD_german_democratic_party:0 "SPD"
  SGD_german_neutrality_party:0 "DNVP"
  SGD_german_neutrality_party_long:0 "Deutschnationale Volkspartei"
  
@@ -282,3 +282,4 @@
 
  SKO_communist_party:0 "WPK"
  SKO_communist_party_long:0 "Workers Party of Korea"
+

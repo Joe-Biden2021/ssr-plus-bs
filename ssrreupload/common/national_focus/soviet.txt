@@ -17392,7 +17392,7 @@ ai_will_do = {
 
 		available = {
 			is_subject = no
-			TAN = {
+			STT = {
 				exists = yes
 				NOT = {
 					OR = {
@@ -17406,7 +17406,7 @@ ai_will_do = {
 		completion_reward = {
 			create_wargoal = { 
 				type = annex_everything 
-				target = TAN 
+				target = STT 
 			}		
 		}
 	}
